@@ -80,7 +80,15 @@
             "dependsOn": [
                 "docker-build: debug"
             ],
-            "dockerRun": {},
+            "dockerRun": {
+                "containerName": "Jwt-Sso-POC",
+                "ports": [
+                    {
+                        "containerPort": 5269,
+                        "hostPort": 5269
+                    }
+                ]
+            },
             "netCore": {
                 "appProject": "${workspaceFolder}/src/JwtSsoPoC.WebApi/JwtSsoPoC.WebApi.csproj",
                 "enableDebugging": true
