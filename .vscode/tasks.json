@@ -46,7 +46,7 @@
             "dockerBuild": {
                 "tag": "jwtssopoc:dev",
                 "target": "base",
-                "dockerfile": "${workspaceFolder}/src/JwtSsoPoC.WebApi/Dockerfile",
+                "dockerfile": "${workspaceFolder}/src/JwtSsoPoC.WebApi/Dockerfile.Debug",
                 "context": "${workspaceFolder}",
                 "pull": true
             },
