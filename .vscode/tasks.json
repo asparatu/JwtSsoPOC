@@ -44,7 +44,7 @@
                 "build"
             ],
             "dockerBuild": {
-                "tag": "jwtssopoc:dev",
+                "tag": "asparatu/jwtssopoc:dev",
                 "target": "base",
                 "dockerfile": "${workspaceFolder}/src/JwtSsoPoC.WebApi/Dockerfile.Debug",
                 "context": "${workspaceFolder}",
@@ -61,7 +61,7 @@
                 "build"
             ],
             "dockerBuild": {
-                "tag": "jwtssopoc:latest",
+                "tag": "asparatu/jwtssopoc:latest",
                 "dockerfile": "${workspaceFolder}/src/JwtSsoPoC.WebApi/Dockerfile",
                 "context": "${workspaceFolder}",
                 "platform": {
