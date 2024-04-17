@@ -1,5 +1,5 @@
-using JwtSsoPoC.WebApi.Abstract;
-using JwtSsoPoC.WebApi.Enums;
+using JwtSsoPoC.WebApi.Common.Abstract;
+using JwtSsoPoC.WebApi.Common.Enums;
 
 using Microsoft.AspNetCore.Identity;
 

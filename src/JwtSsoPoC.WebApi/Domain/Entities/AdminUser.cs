@@ -1,4 +1,4 @@
-using JwtSsoPoC.WebApi.Abstract;
+using JwtSsoPoC.WebApi.Common.Abstract;
 
 using Microsoft.AspNetCore.Identity;
 
