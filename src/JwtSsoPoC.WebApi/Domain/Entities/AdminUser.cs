@@ -2,7 +2,7 @@ using JwtSsoPoC.WebApi.Abstract;
 
 using Microsoft.AspNetCore.Identity;
 
-namespace JwtSsoPoC.WebApi.Entities;
+namespace JwtSsoPoC.WebApi.Domain.Entities;
 
 public class AdminUser : IdentityUser
 {

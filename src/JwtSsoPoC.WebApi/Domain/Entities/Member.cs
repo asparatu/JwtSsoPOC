@@ -3,9 +3,9 @@ using JwtSsoPoC.WebApi.Enums;
 
 using Microsoft.AspNetCore.Identity;
 
-namespace JwtSsoPoC.WebApi.Entities;
+namespace JwtSsoPoC.WebApi.Domain.Entities;
 
-public class MemberUser : IdentityUser
+public class Member : IdentityUser
 {
     public Person Person{ get; set; }
     public AccountStatus AccountStatus{ get; set; }
