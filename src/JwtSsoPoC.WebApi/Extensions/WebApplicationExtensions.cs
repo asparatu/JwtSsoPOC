@@ -19,4 +19,30 @@ public static class WebApplicationExtensions
             }
     }
     #endregion
+
+    #region UseSwaggerUI
+    internal static void UseSwaggerUI(this WebApplication app)
+    {
+        // Configures the Http request Pipeline
+        if(app.Environment.IsDevelopment())
+        {
+            app.UseSwagger();
+            app.UseSwaggerUI( opts =>
+            {
+                var descriptions = app.DescribeApiVersions();
+
+                //build a swagger endpoint for each discovered AP version
+                foreach(var description in descriptions)
+                {
+                    var url = $"/swagger/{description.GroupName}/swagger.json";
+                    var name = description.GroupName.ToUpper();
+                    
+                    opts.SwaggerEndpoint(url,name);
+                }
+
+                 opts.RoutePrefix = string.Empty;
+            });
+        }
+    }
+    #endregion
 }
