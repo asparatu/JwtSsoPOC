@@ -1,4 +1,4 @@
- namespace JwtSsoPoC.WebApi.Abstract;
+ namespace JwtSsoPoC.WebApi.Common.Abstract;
 
 public class Person
 {
