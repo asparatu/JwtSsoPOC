@@ -2,7 +2,7 @@ using System.Diagnostics;
 
 using Ardalis.SmartEnum;
 
-namespace JwtSsoPoC.WebApi.Enums;
+namespace JwtSsoPoC.WebApi.Common.Enums;
 
 public abstract class AccountStatus : SmartEnum<AccountStatus>
 {
