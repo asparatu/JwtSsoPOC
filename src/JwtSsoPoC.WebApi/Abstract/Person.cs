@@ -1,6 +1,6 @@
-namespace JwtSsoPoC.WebApi.Abstract;
+ namespace JwtSsoPoC.WebApi.Abstract;
 
-public abstract class Person
+public class Person
 {
     public string GivenName { get; set; }
     public string MiddleName { get; set; }
