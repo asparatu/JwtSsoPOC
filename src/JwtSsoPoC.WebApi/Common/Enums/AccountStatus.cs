@@ -1,5 +1,3 @@
-using System.Diagnostics;
-
 using Ardalis.SmartEnum;
 
 namespace JwtSsoPoC.WebApi.Common.Enums;
